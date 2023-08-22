@@ -57,7 +57,7 @@ function DishCard({ data }) {
           src={`${process.env.STRAPI_URL || "http://127.0.0.1:1337"}${
             data.attributes.image.data.attributes.url
           }`}
-          alt=""
+          alt="dish image"
         />
         <div className="p-8">
           <div className="group inline-block mb-4" href="#">

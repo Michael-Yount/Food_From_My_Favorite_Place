@@ -4,7 +4,8 @@
   "info": {
     "singularName": "dish",
     "pluralName": "dishes",
-    "displayName": "dish"
+    "displayName": "dish",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -18,14 +19,15 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "price": {
       "type": "decimal"
