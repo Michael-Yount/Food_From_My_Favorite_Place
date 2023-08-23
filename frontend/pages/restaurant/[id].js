@@ -20,7 +20,7 @@ const GET_RESTAURANT_DISHES = gql`
               attributes {
                 name
                 description
-                priceInCents
+                price
                 image {
                   data {
                     attributes {
@@ -55,7 +55,7 @@ function DishCard({ data }) {
           height={300}
           width={300}
           src={`${process.env.STRAPI_URL || "http://127.0.0.1:1337"}${
-            data.attributes.image.data.attributes.url
+            data.attributes.image
           }`}
           alt="dish image"
         />
@@ -64,7 +64,7 @@ function DishCard({ data }) {
             <h3 className="font-heading text-xl text-gray-900 hover:text-gray-700 group-hover:underline font-black">
               {data.attributes.name}
             </h3>
-            <h2>${centsToDollars(data.attributes.priceInCents)}</h2>
+            <h2>${centsToDollars(data.attributes.price)}</h2>
           </div>
           <p className="text-sm text-gray-500 font-bold">
             {data.attributes.description}
