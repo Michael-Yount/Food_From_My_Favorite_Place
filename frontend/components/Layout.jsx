@@ -78,7 +78,7 @@ function Navigation() {
 }
 
 export default function Layout(props) {
-  const title = "Order Food From Your Favorite Place";
+  const title = "Order Food From Your Favorite";
 
   return (
     <div>

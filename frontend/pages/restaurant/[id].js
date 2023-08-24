@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 import Image from "next/image";
 import Loader from "@/components/Loader";
-
+import { useAppContext } from "../../context/AppContext";
 
 
 const GET_RESTAURANT_DISHES = gql`
