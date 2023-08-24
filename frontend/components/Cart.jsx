@@ -80,7 +80,7 @@ export default function Cart() {
           </svg>
         </button>
         {showCart && (
-          <div className="rounded-3xl co bg-gray-800">
+          <div className="rounded-3xl co bg-gray-800 background">
             <div className="max-w-lg pt-6 pb-8 px-8 mx-auto">
               <div className="flex mb-10 items-center justify-between">
                 <h6 className="font-bold text-2xl text-white mb-0">
