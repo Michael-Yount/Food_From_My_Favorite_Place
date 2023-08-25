@@ -12,3 +12,11 @@
 ## Will integrate multiple restaurants from the location of the user.
 
 ## User feedback, such as , stars or thumbs up.
+
+## Add background video showing live action cooking.
+
+## Add search bar in dishes for the rerstaurant dishes.
+
+## add availability, i.e. we cn stock the items until they run out.
+
+## 
