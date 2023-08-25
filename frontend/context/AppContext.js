@@ -36,14 +36,14 @@ export const AppProvider = ({ children }) => {
       };
       setCart((prevCart) => ({
         items: [...prevCart.items, newItem],
-        total: prevCart.total + item.attributes.priceInCents,
+        total: prevCart.total + item.attributes.price,
       }));
     } else {
       setCart((prevCart) => ({
         items: prevCart.items.map((i) =>
           i.id === newItem.id ? { ...i, quantity: i.quantity + 1 } : i
         ),
-        total: prevCart.total + item.attributes.priceInCents,
+        total: prevCart.total + item.attributes.price,
       }));
     }
   };
@@ -55,12 +55,12 @@ export const AppProvider = ({ children }) => {
         items: prevCart.items.map((i) =>
           i.id === newItem.id ? { ...i, quantity: i.quantity - 1 } : i
         ),
-        total: prevCart.total - item.attributes.priceInCents,
+        total: prevCart.total - item.attributes.price,
       }));
     } else {
       setCart((prevCart) => ({
         items: prevCart.items.filter((i) => i.id !== item.id),
-        total: prevCart.total - item.attributes.priceInCents,
+        total: prevCart.total - item.attributes.price,
       }));
     }
   };

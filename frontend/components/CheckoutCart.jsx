@@ -10,7 +10,7 @@ function CartItem({ data }) {
         <div className="flex flex-col h-full">
           <h6 className="font-bold text-white mb-1">{attributes.name}</h6>
           <span className="block pb-4 mb-auto font-medium text-gray-400">
-            {quantity} x ${centsToDollars(attributes.priceInCents)}
+            {quantity} x ${centsToDollars(attributes.price)}
           </span>
         </div>
       </div>
@@ -31,7 +31,7 @@ function CartItem({ data }) {
             </button>
           </div>
           <span className="block mt-2 text-sm font-bold text-white">
-            ${centsToDollars(attributes.priceInCents * quantity)}
+            ${centsToDollars(attributes.price * quantity)}
           </span>
         </div>
       </div>
