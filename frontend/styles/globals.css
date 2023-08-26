@@ -10,10 +10,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -31,4 +29,7 @@ a {
     color: rgb(255, 255, 255);
     background: rgb(10, 31, 23);
   }
+}
+.navbar {
+  border-radius: 2rem;
 }

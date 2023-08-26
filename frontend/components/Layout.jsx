@@ -18,7 +18,7 @@ function Navigation() {
   }
 
   return (
-    <header className="bg-blue-800 background">
+    <header className="bg-blue-800 background navbar">
       <nav className="flex justify-between p-6 px-4">
         <div className="flex justify-between items-center w-full mx-16">
           <div className="xl:w-1/3">
@@ -86,7 +86,9 @@ export default function Layout(props) {
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet"/>
       </Head>
       <Navigation />
       <Cart />

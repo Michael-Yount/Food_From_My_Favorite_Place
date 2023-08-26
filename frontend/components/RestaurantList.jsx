@@ -50,7 +50,7 @@ function RestaurantCard({ data }) {
                 className="block w-full px-12 py-3.5 text-lg text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full"
                 href={`/restaurant/${data.id}`}
               >
-                View
+                View some dishes
               </Link>
             </div>
           </div>
@@ -73,7 +73,7 @@ function RestaurantList(props) {
 
     if (searchQuery.length != 0) {
       return (
-        <div className="py-16 px-8 bg-white rounded-3xl">
+        <div className="py-16 px-8 bg-white rounded-3xl action">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap -m-4 mb-6">
               {searchQuery.map((res) => {
