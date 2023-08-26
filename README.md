@@ -20,4 +20,4 @@
 ## add availability, i.e. we cn stock the items until they run out.
 
 ## 
-![working](https://github.com/Michael-Yount/Food_From_My_Favorite_Place/assets/11709807/4cbbc7f2-a9a8-48cd-bd09-9598911d6892)
+![restaurant_new_screenshot](https://github.com/Michael-Yount/Food_From_My_Favorite_Place/assets/11709807/e1eb3049-bf12-4ec4-a35d-2a2116f1cea6)
