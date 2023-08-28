@@ -98,10 +98,10 @@ export default function Restaurant() {
 
     return (
       <div className="py-6">
-        <h1 className="text-4xl font-bold text-green-600">
+        <div className="py-16 px-8 bg-white rounded-3xl restaurantBacking">
+        <h1 className="text-4xl font-bold text-green-600 dishesListTitle">
           {restaurant.data.attributes.name}
         </h1>
-        <div className="py-16 px-8 bg-white rounded-3xl">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap -m-4 mb-6">
               {restaurant.data.attributes.dishes.data.map((res) => {
