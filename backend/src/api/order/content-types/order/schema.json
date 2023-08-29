@@ -30,11 +30,11 @@
     "dishes": {
       "type": "json"
     },
-    "users_permissions_user": {
+    "orders": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "orders"
+      "mappedBy": "user"
     }
   }
 }

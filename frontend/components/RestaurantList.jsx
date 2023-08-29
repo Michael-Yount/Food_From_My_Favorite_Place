@@ -2,6 +2,7 @@ import { gql, useQuery } from "@apollo/client";
 import Link from "next/link";
 import Image from "next/image";
 import Loader from "./Loader";
+//import BackgroundVideo from "../components/BackgroundVideo";
 
 const QUERY = gql`
   {
@@ -73,7 +74,7 @@ function RestaurantList(props) {
 
     if (searchQuery.length != 0) {
       return (
-        <div className="py-16 px-8 bg-white rounded-3xl action">
+        <div className="py-16 px-8 bg-white rounded-3xl action restaurantBacking">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap -m-4 mb-6">
               {searchQuery.map((res) => {

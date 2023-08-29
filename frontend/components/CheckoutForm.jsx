@@ -151,7 +151,7 @@ export default function CheckoutForm() {
             <input
               id="address"
               htmlFor="address"
-              className="appearance-none block w-full p-3 leading-5 text-gray-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              className="appearance-none block w-full p-3 leading-5 text-white-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
               type="text"
               name="address"
               onChange={onChange}
@@ -163,7 +163,7 @@ export default function CheckoutForm() {
           <div className="flex-1 mr-6">
             <label
               htmlFor="city"
-              className="block mb-2 test-gray-800 font-medium"
+              className="block mb-2 test-white-800 font-medium"
             >
               City
             </label>
@@ -172,7 +172,7 @@ export default function CheckoutForm() {
               name="city"
               id="city"
               onChange={onChange}
-              className="appearance-none block w-full p-3 leading-5 text-gray-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              className="appearance-none block w-full p-3 leading-5 text-white-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
             />
           </div>
 
@@ -188,7 +188,7 @@ export default function CheckoutForm() {
               name="state"
               id="state"
               onChange={onChange}
-              className="appearance-none block w-full p-3 leading-5 text-gray-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              className="appearance-none block w-full p-3 leading-5 text-white-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
             />
           </div>
         </div>

@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
+import video from '../public/bgVideo2.mp4';
 
-class BackgroundVideo extends Component {
-  render() {
+function BackgroundVideo () {
+ 
     return (
+      <div className="bgContainer">
+        <div className="overlay">
+
       <video autoPlay loop muted>
-        <source src="video.mp4" type="video/mp4" />
+        <source src={video} type="video/mp4" />
       </video>
+
+        </div>
+      </div>
     );
   }
-}
+
 
 export default BackgroundVideo;

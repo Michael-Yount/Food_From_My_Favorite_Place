@@ -1,6 +1,6 @@
 "use strict";
 // @ts-ignore
-const stripe = require("stripe")("pk_test_51N2LjeDSVY8bNK9QwR8eJjSVrMk99JwO1x1GeHiFYIsCqnYdTWt4eG5KECyCYENnVfFNzeDZhPZ91U4j5wtKbwK900zyaQMTuz");
+const stripe = require("stripe")("sk_test_51NkFKfLIpGekPM9td4NgXv2pWKuN3QwyCmOqnGJvPGBBDTwjNLIEsxHURzUiyQiImKrRpP4sDqC8Z3w1M4IvuAey00vtOGWcUT");
 
 /**
  *  order controller
