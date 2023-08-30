@@ -36,7 +36,8 @@ export const AppProvider = ({ children }) => {
       };
       setCart((prevCart) => ({
         items: [...prevCart.items, newItem],
-        total: prevCart.total + item.attributes.price,
+        total: prevCart.total + item.attributes.price
+        ,
       }));
     } else {
       setCart((prevCart) => ({
