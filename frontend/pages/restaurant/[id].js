@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Loader from "@/components/Loader";
 import { useAppContext } from "../../context/AppContext";
+import { useState } from "react";
 
 
 const GET_RESTAURANT_DISHES = gql`
@@ -90,29 +91,47 @@ export default function Restaurant() {
   const { loading, error, data } = useQuery(GET_RESTAURANT_DISHES, {
     variables: { id: router.query.id },
   });
+  const [searchQuery, setSearchQuery] = useState("");
 
   if (error) return "Error Loading Dishes";
   if (loading) return <Loader />;
   if (data.restaurant.data.attributes.dishes.data.length) {
     const { restaurant } = data;
+    const dishesData = restaurant.data.attributes.dishes.data;
+
+    const dishesSearchQuery =
+      data.restaurant.data.attributes.dishes.data.filter((query) =>
+        query.attributes.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
 
     return (
       <div className="py-6">
-        <div className="py-16 px-8 bg-white rounded-3xl restaurantBacking">
-        <h1 className="text-4xl font-bold text-green-600 dishesListTitle">
+        <h1 className="text-4xl font-bold text-red-600">
           {restaurant.data.attributes.name}
         </h1>
-          <div className="max-w-7xl mx-auto">
-            <div className="flex flex-wrap -m-4 mb-6">
-              {restaurant.data.attributes.dishes.data.map((res) => {
-                return <DishCard key={res.id} data={res} />;
-              })}
+        <div className="my-6">
+          <input
+            className="appearance-none block w-full p-3 leading-5 text-coolGray-900 border border-coolGray-200 rounded-lg shadow-md placeholder-coolGray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
+            type="text"
+            placeholder="Search dishes"
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </div>
+        {dishesSearchQuery.length ? (
+          <div className="py-16 px-8">
+            <div className="max-w-7xl mx-auto">
+              <div className="flex flex-wrap -m-4 mb-6">
+                {dishesSearchQuery.map((res) => {
+                  return <DishCard key={res.id} data={res} />;
+                })}
+              </div>
             </div>
           </div>
-        </div>
+        ) : (
+          <h1>No Dishes Found</h1>
+        )}
       </div>
     );
-  } else {
-    return <h1>No Dishes Found</h1>;
   }
 }
+
