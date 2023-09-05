@@ -50,7 +50,7 @@ function DishCard({ data }) {
 
   return (
     <div className="w-full md:w-1/2 lg:w-1/3 p-4">
-      <div className="h-full bg-gray-100 rounded-2xl">
+      <div className="h-full bg-gray-100 rounded-2xl place-card-bg">
         <Image
           className="w-full rounded-2xl"
           height={300}
@@ -106,7 +106,7 @@ export default function Restaurant() {
 
     return (
       <div className="py-6">
-        <h1 className="text-4xl font-bold text-red-600">
+        <h1 className="text-4xl font-bold rest-name">
           {restaurant.data.attributes.name}
         </h1>
         <div className="my-6">

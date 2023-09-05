@@ -30,18 +30,18 @@ a {
   }
   body {
     color: rgb(255, 255, 255);
-    background: rgb(7, 24, 18);
+    background:linear-gradient(90deg, rgb(147, 147, 152) 24%, rgb(178, 178, 194) 70%, rgb(168, 183, 186) 100%);
   }
 }
 .navbar {
   border-radius: .5rem;
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgb(25, 22, 63) 24%, rgb(13, 13, 43) 70%, rgb(41, 114, 128) 100%);
+background: linear-gradient(90deg, rgb(137, 135, 156) 24%, rgb(180, 180, 191) 70%, rgb(138, 141, 150) 100%);
 }
 
 .restaurantBacking {
  background-color: rgb(23, 31, 31);
- background: radial-gradient(circle, rgb(17, 17, 48) 19%, rgb(190, 227, 242) 100%);
+ background: radial-gradient(circle, rgb(210, 210, 234) 19%, rgb(222, 231, 235) 100%);
  
 }
 
@@ -50,4 +50,21 @@ background: linear-gradient(90deg, rgb(25, 22, 63) 24%, rgb(13, 13, 43) 70%, rgb
     margin-bottom: 2rem;
     font-size: 4rem;
     color: azure;
+}
+
+.place-card-bg {
+ background: radial-gradient(circle, rgb(255, 255, 255) 19%, rgb(235, 245, 248) 100%);
+
+}
+.rest-name {
+  color: rgb(247, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-shadow: 0 0 2rem;
+}
+.title {
+  font-size: 1.29999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0 0 2rem;
+
 }
