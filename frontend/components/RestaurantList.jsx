@@ -2,7 +2,6 @@ import { gql, useQuery } from "@apollo/client";
 import Link from "next/link";
 import Image from "next/image";
 import Loader from "./Loader";
-//import BackgroundVideo from "../components/BackgroundVideo";
 
 const QUERY = gql`
   {

@@ -6,7 +6,6 @@ const Cart = dynamic(() => import("@/components/Cart"), { ssr: false });
 
 import Head from "next/head";
 import Link from "next/link";
-import video from '../public/bgVideo2.mp4';
 
 
 function Navigation() {
@@ -93,11 +92,7 @@ export default function Layout(props) {
       <Cart />
       
       <div className="container mx-auto px-4">{props.children}</div>
-      <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
-            <source src={video} type="video/mp4" />
-          </video>
-        </div>
+     
     </div>
   );
 }

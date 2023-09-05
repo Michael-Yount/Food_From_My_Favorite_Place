@@ -12,11 +12,8 @@ body {
   margin: 0;
   font-family: 'Roboto Flex', sans-serif;
 
-  background-image: url(../public/bgVideo2.mp4);
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
+  
 }
 a {
   color: inherit;
@@ -43,7 +40,7 @@ background: linear-gradient(90deg, rgb(6, 3, 51) 24%, rgba(9,9,121,1) 60%, rgba(
 }
 
 .restaurantBacking {
- background-color: aqua;
+ background-color: rgb(23, 31, 31);
  
 }
 
