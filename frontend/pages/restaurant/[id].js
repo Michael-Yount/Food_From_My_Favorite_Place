@@ -118,6 +118,7 @@ export default function Restaurant() {
           />
         </div>
         {dishesSearchQuery.length ? (
+          
           <div className="py-16 px-8">
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-wrap -m-4 mb-6">

@@ -36,11 +36,12 @@ a {
 .navbar {
   border-radius: .5rem;
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgb(6, 3, 51) 24%, rgba(9,9,121,1) 60%, rgba(148,237,255,1) 100%);
+background: linear-gradient(90deg, rgb(25, 22, 63) 24%, rgb(13, 13, 43) 70%, rgb(41, 114, 128) 100%);
 }
 
 .restaurantBacking {
  background-color: rgb(23, 31, 31);
+ background: radial-gradient(circle, rgb(17, 17, 48) 19%, rgb(190, 227, 242) 100%);
  
 }
 
