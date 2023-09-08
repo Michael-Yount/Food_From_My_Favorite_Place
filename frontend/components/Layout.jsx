@@ -62,7 +62,7 @@ function Navigation() {
                       Log In
                     </Link>
                     <Link
-                      className="inline-block py-2 px-4 text-sm leading-5 text-green-50 bg-green-600 hover:bg-green-700 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 rounded-md"
+                      className="inline-block py-2 px-4 text-sm leading-5 text-green-50 bg-blue-600 hover:bg-green-700 font-medium focus:ring-2 focus:ring-green-500 focus:ring-opacity-20 rounded-md"
                       href="/register"
                     >
                       Sign Up

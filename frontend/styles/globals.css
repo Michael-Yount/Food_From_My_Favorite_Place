@@ -6,6 +6,11 @@
     box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.556);
 }
 
+.modal {
+  top: 50%;
+  height: 50%;
+}
+
 html,
 body {
   padding: 0;
@@ -30,18 +35,18 @@ a {
   }
   body {
     color: rgb(255, 255, 255);
-    background:linear-gradient(90deg, rgb(147, 147, 152) 24%, rgb(178, 178, 194) 70%, rgb(168, 183, 186) 100%);
+    background:linear-gradient(90deg, rgb(48, 48, 57) 24%, rgb(178, 178, 194) 70%, rgb(57, 64, 65) 100%);
   }
 }
 .navbar {
   border-radius: .5rem;
   background: rgb(2,0,36);
-background: linear-gradient(90deg, rgb(137, 135, 156) 24%, rgb(180, 180, 191) 70%, rgb(138, 141, 150) 100%);
+background: linear-gradient(90deg, rgb(76, 103, 89) 24%, rgb(180, 180, 191) 70%, rgb(69, 99, 189) 100%);
 }
 
 .restaurantBacking {
  background-color: rgb(23, 31, 31);
- background: radial-gradient(circle, rgb(210, 210, 234) 19%, rgb(222, 231, 235) 100%);
+ background: radial-gradient(circle, rgb(98, 98, 108) 19%, rgb(30, 33, 36) 100%);
  
 }
 
@@ -53,7 +58,7 @@ background: linear-gradient(90deg, rgb(137, 135, 156) 24%, rgb(180, 180, 191) 70
 }
 
 .place-card-bg {
- background: radial-gradient(circle, rgb(255, 255, 255) 19%, rgb(235, 245, 248) 100%);
+ background: radial-gradient(circle, rgb(250, 247, 247) 19%, rgb(235, 245, 248) 100%);
 
 }
 .rest-name {
@@ -63,7 +68,7 @@ background: linear-gradient(90deg, rgb(137, 135, 156) 24%, rgb(180, 180, 191) 70
   text-shadow: 0 0 2rem;
 }
 .title {
-  font-size: 1.29999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999rem;
+  font-size: 1.2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-shadow: 0 0 2rem;
 

@@ -9,8 +9,8 @@ export default function Form({
   error,
 }) {
   return (
-    <section className="py-24 md:py-32 bg-white">
-      <div className="container px-4 mx-auto">
+    <section className="py-24 md:py-32 ">
+      <div className="container px-2 mx-auto">
         <div className="max-w-sm mx-auto">
           <div className="mb-6 text-center">
             <h3 className="mb-4 text-2xl md:text-3xl font-bold">{title}</h3>
@@ -25,7 +25,7 @@ export default function Form({
               </label>
               <input
                 id="email"
-                className="appearance-none block w-full p-3 leading-5 text-gray-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+                className="appearance-none block w-full p-3 leading-5 text-white-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
                 type="email"
                 name="email"
                 placeholder="Enter your email"

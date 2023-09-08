@@ -12,7 +12,7 @@ function CartItem({ data }) {
         <div className="flex flex-col h-full">
           <h6 className="font-bold text-white mb-1">{attributes.name}</h6>
           <span className="block pb-4 mb-auto font-medium text-gray-400">
-            {quantity} x ${centsToDollars(attributes.price)}
+            {quantity} x ${(attributes.price)}
           </span>
         </div>
       </div>
@@ -33,7 +33,7 @@ function CartItem({ data }) {
             </button>
           </div>
           <span className="block mt-2 text-sm font-bold text-white">
-            ${centsToDollars(attributes.price * quantity)}
+            ${(attributes.price * quantity)}
           </span>
         </div>
       </div>
@@ -57,7 +57,7 @@ export default function Cart() {
   }
 
   return (
-    <section className="fixed right-20 top-[242px]">
+    <section className=" right-20">
       <div className="relative">
         <button
           onClick={() => setShowCart((prevState) => !prevState)}
@@ -80,7 +80,7 @@ export default function Cart() {
           </svg>
         </button>
         {showCart && (
-          <div className="rounded-3xl co bg-gray-800 background">
+          <div className="rounded-3xl co bg-gray-600 background modal">
             <div className="max-w-lg pt-6 pb-8 px-8 mx-auto">
               <div className="flex mb-10 items-center justify-between">
                 <h6 className="font-bold text-2xl text-white mb-0">
@@ -101,7 +101,7 @@ export default function Cart() {
                 <div className="flex mb-6 content-center justify-between">
                   <span className="font-bold text-white">Order total</span>
                   <span className="text-sm font-bold text-white">
-                    ${centsToDollars(displayTotal)}
+                    ${(displayTotal)}
                   </span>
                 </div>
                 <button
