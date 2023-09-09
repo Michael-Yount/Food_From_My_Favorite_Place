@@ -9,13 +9,15 @@ import Link from "next/link";
 
 
 function Navigation() {
-  const { user, setUser } = useAppContext();
+  const { user, setUser, resetCart } = useAppContext();
   const router = useRouter();
 
   function handleLogout() {
     setUser(null);
     Cookie.remove("token");
     router.push("/");
+    ;
+    
   }
 
   return (

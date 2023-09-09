@@ -64,7 +64,7 @@ export default function Cart() {
           className="absolute right-0 z-10 bg-green-500 text-white p-3 rounded-full hover:bg-yellow-500 items-center"
         >
           <svg
-            width="24"
+            width="48"
             height="24"
             viewBox="0 0 16 18"
             fill="none"
@@ -78,7 +78,7 @@ export default function Cart() {
               strokeLinejoin="round"
             ></path>
           </svg>
-        </button>
+         Cart</button>
         {showCart && (
           <div className="rounded-3xl co bg-gray-600 background modal">
             <div className="max-w-lg pt-6 pb-8 px-8 mx-auto">
