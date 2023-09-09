@@ -35,13 +35,13 @@ a {
   }
   body {
     color: rgb(255, 255, 255);
-    background:linear-gradient(90deg, rgb(48, 48, 57) 24%, rgb(178, 178, 194) 70%, rgb(57, 64, 65) 100%);
+    background:linear-gradient(90deg, rgb(241, 241, 255) 24%, rgb(178, 178, 194) 70%, rgb(221, 247, 250) 100%);
   }
 }
 .navbar {
   border-radius: .5rem;
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgb(76, 103, 89) 24%, rgb(180, 180, 191) 70%, rgb(69, 99, 189) 100%);
+  background: rgb(11, 10, 23);
+
 }
 
 .restaurantBacking {
@@ -62,10 +62,10 @@ background: linear-gradient(90deg, rgb(76, 103, 89) 24%, rgb(180, 180, 191) 70%,
 
 }
 .rest-name {
-  color: rgb(247, 255, 255);
+  color: rgb(30, 0, 105);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  text-shadow: 0 0 2rem;
+  text-shadow: 0 0 2rem white;
 }
 .title {
   font-size: 1.2rem;

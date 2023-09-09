@@ -73,7 +73,6 @@ function RestaurantList(props) {
 
     if (searchQuery.length != 0) {
       return (
-        <div className="py-16 px-8 bg-white rounded-3xl action restaurantBacking">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap -m-4 mb-6">
               {searchQuery.map((res) => {
@@ -81,7 +80,6 @@ function RestaurantList(props) {
               })}
             </div>
           </div>
-        </div>
       );
     } else {
       return <h1>No Restaurants Found</h1>;
