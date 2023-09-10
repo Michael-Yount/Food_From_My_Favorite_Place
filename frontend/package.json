@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "devDeploy1":"cd backend develop",
     "dev": "next dev",
-    "devDeploy2": "dev && devDeploy1",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
