@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "devDeploy":"npm run dev cd /backend && npm run develop",
+    "devDeploy1":"cd backend develop",
     "dev": "next dev",
+    "devDeploy2": "dev && devDeploy1",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
