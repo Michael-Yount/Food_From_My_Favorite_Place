@@ -5,7 +5,7 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: "https",
-          hostname: "https://restaurant-app-gee8.onrender.com",
+          hostname: "restaurant-app-gee8.onrender.com",
           pathname: "/uploads/**",
         },
         {
