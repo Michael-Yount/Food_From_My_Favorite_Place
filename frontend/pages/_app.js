@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 import Layout from "@/components/Layout";
 
 
-const API_URL = process.env.STRAPI_URL || "http://127.0.0.1:1337";
+const API_URL = process.env.STRAPI_URL || "https://restaurant-app-gee8.onrender.com";
 
 export const client = new ApolloClient({
   uri: `${API_URL}/graphql`,
