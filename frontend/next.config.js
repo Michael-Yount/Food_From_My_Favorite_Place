@@ -5,7 +5,7 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: "https",
-          hostname: "strapi-75qo.onrender.com",
+          hostname: "https://restaurant-app-gee8.onrender.com",
           pathname: "/uploads/**",
         },
         {
@@ -17,7 +17,7 @@ const nextConfig = {
         {
           protocol: "https",
           hostname: "res.cloudinary.com",
-          pathname: "/djdxnn3vg/image/upload/**",
+          pathname: "/ddrmwfywh/image/upload/**",
         },
       ],
     },
