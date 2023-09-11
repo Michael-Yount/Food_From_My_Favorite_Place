@@ -8,7 +8,6 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
-   
   },
   "dependencies": {
     "@strapi/plugin-graphql": "^4.12.5",
@@ -16,7 +15,8 @@
     "@strapi/plugin-users-permissions": "4.12.5",
     "@strapi/strapi": "4.12.5",
     "concurrently": "^8.2.1",
-    "pg": "8.8.0",
+    "pg": "^8.8.0",
+    "pg-connection-string": "^2.6.2",
     "stripe": "^13.3.0"
   },
   "author": {

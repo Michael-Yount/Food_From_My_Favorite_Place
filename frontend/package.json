@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev1": "next dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "backend-install": "npm install --prefix backend",
-    "backend": "cd ../ && npm run develop --prefix backend",
-    "dev": "concurrently \"npm run dev1\" \"npm run backend"
+    "lint": "next lint"
   },
   "dependencies": {
     "@apollo/client": "^3.8.1",
