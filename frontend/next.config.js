@@ -3,6 +3,9 @@ const nextConfig = {
     reactStrictMode: true,
     images: {
       remotePatterns: [
+         {
+          STRAPI_URL: process.env.STRAPI_URL,
+        },
         {
           protocol: "https",
           hostname: "restaurant-app-gee8.onrender.com",
