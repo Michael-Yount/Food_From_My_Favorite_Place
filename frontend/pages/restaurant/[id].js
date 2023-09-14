@@ -56,7 +56,7 @@ function DishCard({ data }) {
           height={300}
           width={300}
           src={`${process.env.STRAPI_URL || ""}${
-            data.attributes.image.data.attributes.url
+            data.attributes.image.data[0].attributes.url
           }`}
           alt="dish image"
         />
