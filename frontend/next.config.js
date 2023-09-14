@@ -6,7 +6,7 @@ const nextConfig = {
         
         {
           protocol: "https",
-          hostname: "restaurant-app-gee8.onrender.com",
+          hostname: "restaurant-strapi.onrender.com",
           pathname: "/uploads/**",
         },
         {
