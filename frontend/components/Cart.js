@@ -48,6 +48,7 @@ export default function Cart() {
   const displayTotal = Math.abs(total);
 
   function loginRedirect() {
+    setShowCart(false);
     router.push("/login");
   }
 
