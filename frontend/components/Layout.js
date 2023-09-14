@@ -29,7 +29,7 @@ function Navigation() {
               className="block text-2xl max-w-max text-white title"
               href="/"
             >
-              Order Food From My Favorite Place...
+              Foodie Order
             </Link>
           </div>
 
