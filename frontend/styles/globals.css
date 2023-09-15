@@ -35,12 +35,12 @@ a {
   }
   body {
     color: rgb(255, 255, 255);
-    background:linear-gradient(90deg, rgb(241, 241, 255) 24%, rgb(178, 178, 194) 70%, rgb(221, 247, 250) 100%);
+    background:linear-gradient(90deg, rgb(159, 159, 173) 24%, rgb(83, 83, 95) 70%, rgb(221, 247, 250) 100%);
   }
 }
 .navbar {
   border-radius: .5rem;
-  background: rgb(11, 10, 23);
+  background: rgb(6, 10, 39);
 
 }
 
@@ -58,18 +58,26 @@ a {
 }
 
 .place-card-bg {
- background: radial-gradient(circle, rgb(250, 247, 247) 19%, rgb(235, 245, 248) 100%);
+ background: radial-gradient(circle, rgb(250, 247, 247) 19%, rgba(120, 224, 255, 0.221) 100%);
 
 }
 .rest-name {
   color: rgb(30, 0, 105);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  text-shadow: 0 0 2rem white;
+  text-shadow: 0 0 1rem white;
 }
 .title {
   font-size: 1.2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 0 0 2rem;
+  text-shadow: 0 0 1rem;
 
+}
+.price {
+  color: black;
+  font-weight: bold;
+}
+
+.darkCard {
+  background-color: rgb(85, 101, 115);
 }

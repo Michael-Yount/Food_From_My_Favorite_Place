@@ -137,7 +137,7 @@ export default function CheckoutForm() {
 
   return (
     <form>
-      <div className="bg-white shadow-md rounded-lg p-8">
+      <div className="shadow-md rounded-lg p-8 darkCard">
         <h5 className="text-lg font-semibold">Your information:</h5>
         <hr className="my-4" />
         <div className="flex mb-6">
@@ -165,14 +165,16 @@ export default function CheckoutForm() {
               htmlFor="city"
               className="block mb-2 test-white-800 font-medium"
             >
-              City
+              City, State
             </label>
             <input
               type="text"
               name="city"
               id="city"
               onChange={onChange}
-              className="appearance-none block w-full p-3 leading-5 text-white-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              className="appearance-none block w-full p-3 leading-5 text-white-900 border border-gray-200 rounded-lg shadow-md placeholder-text-white-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              placeholder="City, State"
+
             />
           </div>
 
@@ -181,7 +183,7 @@ export default function CheckoutForm() {
               htmlFor="state"
               className="block mb-2 test-gray-800 font-medium"
             >
-              State
+              Zip Code
             </label>
             <input
               type="text"
@@ -189,6 +191,8 @@ export default function CheckoutForm() {
               id="state"
               onChange={onChange}
               className="appearance-none block w-full p-3 leading-5 text-white-900 border border-gray-200 rounded-lg shadow-md placeholder-text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              placeholder="Enter Zip"
+
             />
           </div>
         </div>
