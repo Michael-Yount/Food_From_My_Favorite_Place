@@ -37,6 +37,12 @@ export default function RegisterRoute() {
       setUser(data.register.user);
       router.push("/");
       Cookie.set("token", data.register.jwt);
+
+      return (
+        <div>
+          <h1>You Are Successfully Signed In</h1>
+        </div>
+      )
     }
   };
 
