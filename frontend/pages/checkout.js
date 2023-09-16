@@ -11,11 +11,11 @@ export default function Checkout() {
 
   return (
     <section className="container mx-auto py-24">
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols gap-4">
         <div className="col-span-2">
           <CheckoutCart />
         </div>
-        <div className="col-span-3">
+        <div className="col-span-2">
           <Elements stripe={stripePromise}>
             <CheckoutForm />
           </Elements>
