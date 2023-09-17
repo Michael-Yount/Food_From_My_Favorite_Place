@@ -1,6 +1,6 @@
-# Food From My Favorite Place
+# Foodis Order
 ## This is an app that lets you order and have delivery from your favorite restaurants.
-
+## This app uses authenticatrion and backend api from Strapi. 
 ------------------------------------------------------------------------------
 
 ## This is a food ordering app used for educational purposes. It is mainly for testing full stack web development.
