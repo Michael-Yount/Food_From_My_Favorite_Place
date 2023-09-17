@@ -1,4 +1,4 @@
-# Foodis Order
+# Foodie Order
 ## This is an app that lets you order and have delivery from your favorite restaurants.
 ## This app uses authenticatrion and backend api from Strapi. 
 ------------------------------------------------------------------------------
