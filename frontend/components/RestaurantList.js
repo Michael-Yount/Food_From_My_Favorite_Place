@@ -30,8 +30,8 @@ function RestaurantCard({ data }) {
       <div className="h-full bg-gray-100 rounded-2xl place-card-bg">
         <Image
           className="w-full rounded-t-2xl"
-          height={300}
-          width={300}
+          height={400}
+          width={400}
           src={`${process.env.STRAPI_URL || ""}${
             data.attributes.image.data.attributes.url
           }`}
