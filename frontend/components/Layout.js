@@ -7,10 +7,13 @@ const Cart = dynamic(() => import("@/components/Cart"), { ssr: false });
 import Head from "next/head";
 import Link from "next/link";
 
+import { AuthContextProvider, UserAuth } from "@/context/AuthContext";
+
 
 function Navigation() {
   const { user, setUser, resetCart } = useAppContext();
   const router = useRouter();
+  
 
   function handleLogout() {
     setUser(null);
@@ -81,7 +84,7 @@ function Navigation() {
 }
 
 export default function Layout(props) {
-  const title = "Order Food From Your Favorite";
+  const title = "Foodie Order";
 
   return (
     <div>
@@ -90,11 +93,14 @@ export default function Layout(props) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />     
       </Head>
+    <AuthContextProvider>
+    
       <Navigation />
       <Cart />
       
       <div className="container mx-auto px-6">{props.children}</div>
      
+    </AuthContextProvider>
     </div>
   );
 }
